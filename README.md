@@ -4,6 +4,7 @@ This is a repository containing examples of offensive Haskell.
 ## Contents:
 - CreateRemoteThreadInjection: Reads raw shellcode from a file on disk and performs VirtualAllocEx -> WriteProcessMemory -> CreateRemoteThread injection on the PID provided as an argument
 - BlockDLL: Spawns a child process with the Microsoft Signed Only mitigation to prevent non-Microsoft signed DLLs from being loaded
+- Inline imports: Uses template Haskell and inline imports instead of the Win32 Haskell package
 
 ### Why Haskell? 
 I learned about Haskell from a functional programming language course in college and thought it'd be interesting to implement some offensive tooling this way. After finding the Win32 Haskell package, I decided to convert some examples of common offensive tooling to Haskell. 
